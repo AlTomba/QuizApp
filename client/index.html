@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Board font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Maps&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Notebook font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Quiz-App</title>
+  </head>
+  <body>
+    <!-- Alternative Board -->
+    <div id="altBoard">
+      <button class="boardBtn" onclick="mathBtnClick()">Математика</button>
+      <button class="boardBtn" onclick="geoBtnClick()">Географија</button>
+      <button class="boardBtn" onclick="engBtnClick()">Англиски</button>
+    </div>
+    <!-- End Alternative Board -->
+    <!-- Alternative Map -->
+    <div id="altMap"></div>
+    <!-- End Alternative Map -->
+    <!-- Alternative Notebook -->
+    <div id="altNotebook"></div>
+    <!-- End Alternative Notebook -->
+    <div class="container">
+      <!-- Room -->
+      <div class="box" id="box">
+        <div class="card" id="back">
+          <div id="board">
+            <button class="boardBtn" onclick="mathBtnClick()">
+              Математика
+            </button>
+            <button class="boardBtn" onclick="geoBtnClick()">Географија</button>
+            <button class="boardBtn" onclick="engBtnClick()">Англиски</button>
+          </div>
+        </div>
+        <!-- <div class="card" id="top"></div> -->
+        <!-- <div class="card" id="bottom"></div> -->
+        <div class="card" id="left"></div>
+        <div class="card" id="right">
+          <div id="map"></div>
+        </div>
+        <!-- End Room -->
+        <!-- Desk -->
+        <div class="desk" id="deskBack"></div>
+        <div class="desk" id="deskTop"></div>
+        <div class="desk" id="deskFront"></div>
+        <!-- End Desk -->
+        <!-- Notebook -->
+        <div class="notebook" id="notebookTop"></div>
+        <div class="notebook" id="notebookFront"></div>
+        <div class="notebook" id="notebookLeft"></div>
+        <div class="notebook" id="notebookRight"></div>
+        <!-- End Notebook -->
+      </div>
+      <!-- End Room -->
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,464 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    background-color: white;
+}
+#altBoard{
+    display: none;
+    position: fixed;
+    left: -0.55%;
+    top: -2.5%;
+    height: 105%;
+    width: 101.2%;
+    background: url(./../assets/images/my-board-new.png) center no-repeat;
+    background-size: 100% 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 11;
+}
+#altBoard:nth-child(1){
+    font-family: "Rubik Maps", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 2rem;
+    
+}
+#altBoard > *{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+}
+
+@media (max-width: 600px) {
+    #altBoard > h1{
+        font-size: xx-large;
+    }
+}
+#btnMathWrapper{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+.answerBtnMath{
+    font-family: "Rubik Maps", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    width: fit-content;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: xx-large;
+}
+.answerBtnMath:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+#altNotebook{
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    z-index: 12;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#altNotebook:nth-child(1){
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2rem;
+}
+#altNotebook > h1{
+    text-align: center;
+}
+#btnEngWrapper{
+    display: flex;
+}
+.answerBtnEng{
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    border: none;
+    background: transparent;
+    font-size: 3rem;
+}
+.answerBtnEng:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+#altMap{
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: url(./assets/images/Macedonia-fix.png) center no-repeat;
+    background-size: 100% 100%;
+    flex-direction: column;
+    z-index: 10;
+}
+#btnGeoWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btnGeo{
+    /* background: transparent; */
+    /* border: none; */
+    font-size: 2rem;
+    margin: 2rem;
+    border: 3px solid #434040;
+    border-radius: 1rem;
+    font-weight: bolder;
+    background-color: antiquewhite;
+}
+.btnGeo:hover{
+    cursor: pointer;
+    background-color: white
+
+}
+#altMap > h1{
+    border-radius: 7px;
+    color: white;
+    background-color: #3b3b3b;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.answerBtnGeo{
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 1rem;
+    background: black;
+    border: none;
+}
+.answerBtnGeo:hover{
+    cursor: pointer;
+    border: 1px solid black;
+    background-color: red;
+}
+#altMap :nth-child(2){
+    left: 43.1%;
+    top: 23.7%;
+}
+#altMap :nth-child(3){
+    left: 50%;
+    top: 17%;
+}
+#altMap :nth-child(4){
+    left: 28%;
+    top: 23%;
+}
+#altMap :nth-child(5){
+    left: 26.2%;
+    top: 34%;
+}
+#altMap :nth-child(6){
+    left: 51.3%;
+    top: 38.5%;
+}
+#altMap :nth-child(7){
+    left: 38.3%;
+    top: 74.3%;
+}
+#altMap :nth-child(8){
+    left: 45.3%;
+    top: 58%;
+}
+#altMap :nth-child(9){
+    left: 23%;
+    top: 70%;
+}
+#altMap :nth-child(10){
+    left: 19%;
+    top: 67%;
+}
+#altMap :nth-child(11){
+    left: 58.6%;
+    top: 53.5%; 
+}
+#altMap :nth-child(12){
+    left: 61.2%;
+    top: 51%;
+}
+#altMap :nth-child(13){
+    left: 63.8%;
+    top: 37.3%;  
+}
+#altMap :nth-child(14){
+    left: 77.5%;
+    top: 53.2%;    
+}
+#altMap :nth-child(15){
+    left: 73.6%;
+    top: 68.3%;    
+}
+#altMap :nth-child(16){
+    left: 67.4%;
+    top: 13%;
+}
+#altMap :nth-child(17){
+    left: 70.6%;
+    top: 28%;
+}
+#altMap :nth-child(18){
+    left: 63.7%;
+    top: 19.5%;      
+}
+#altMap :nth-child(19){
+    left: 73%;
+    top: 30.2%;
+}
+#altMap :nth-child(20){
+    left: 83.6%;
+    top: 38.7%;
+}
+#altMap :nth-child(21){
+    left: 80.8%;
+    top: 25%;
+}
+#altMap :nth-child(22){
+    left: 63.6%;
+    top: 23.5%;
+}
+#altMap :nth-child(23){
+    left: 75.3%;
+    top: 59.2%;
+}
+#altMap :nth-child(24){
+    left: 79.3%;
+    top: 64%;
+}
+#altMap :nth-child(25){
+    left: 15%;
+    top: 48.8%;
+}
+#altMap :nth-child(26){
+    left: 56.6%;
+    top: 30.2%;  
+}
+#altMap :nth-child(27){
+    left: 36%;
+    top: 57%;
+}
+#altMap :nth-child(28){
+    left: 27.6%;
+    top: 49.7%;  
+}
+#altMap :nth-child(29){
+    left: 35.3%;
+    top: 64.2%;
+}
+#altMap :nth-child(30){
+    left: 34.6%;
+    top: 49.4%;
+}
+#altMap :nth-child(31){
+    left: 72.4%;
+    top: 42.7%;  
+}
+#altMap :nth-child(32){
+    left: 30%;
+    top: 72.5%;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    perspective: 1000px;
+    perspective-origin: bottom;
+}
+.box{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    transform-style: preserve-3d;
+    transform-origin: bottom;
+    transform: rotateX(355deg) translateZ(-10rem) translateY(20rem);
+    transition: transform 1s;
+}
+.card{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    color: aliceblue;
+    border: 1px solid white;
+    box-sizing: border-box;
+    position: absolute;
+    font-size: 5rem;
+}
+#back{
+    transform: translateZ(-30rem);
+    background-color: rgb(202, 141, 29);
+    background: url(./../assets/images/test2.png) center no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#board{
+    position: absolute;
+    height: 40rem;
+    width: 80%;
+    background: url(./../assets/images/my-board-new.png) center no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.boardBtn{
+    font-family: "Rubik Maps", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 3rem;
+    width: fit-content;
+    align-self: center;
+    margin: 1rem;
+}
+.boardBtn:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+#left{
+    width: 100%;
+    right: 50%;
+    transform: rotateY(90deg);
+    background-color: rgb(117, 117, 117);
+    background: url(./../assets/images/test2.png) center repeat;
+    background-size: 45% 100%;
+}
+#map{
+    position: absolute;
+    background-color: #754224;
+    background: url(./assets/images/Macedonia-fix.png) center no-repeat;
+    background-size: 100% 100%;
+    height: 21rem;
+    width: 31rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+#right{
+    width: 100%;
+    left: 50%;
+    transform: rotateY(-90deg);
+    background-color: rgb(117, 117, 117);
+    background: url(./../assets/images/test2.png) center repeat;
+    background-size: 45% 100%;
+}
+#top{
+    height: 210%;
+    bottom: -5%;
+    transform: rotateX(-90deg);
+    background: #D3CCE3;
+    background: linear-gradient(
+      to right,
+      #ffffff,#ece9e6
+    );
+}
+#bottom{
+    top: -5%;
+    left: 0%;
+    height: 210%;
+    width: 100%;
+    transform: rotateX(90deg) translateY(30rem);
+    background-image: repeating-conic-gradient(#be8d6b 0 25%, #f1e5c0 0 50%);
+    background-size: 20rem 20rem;
+}
+
+/* Desk */
+
+.desk{
+    position: absolute;
+    left: 50%;
+    bottom: -10%;
+    height: 20rem;
+    width: 20rem;
+    padding: 0;
+    margin: 0;
+    color: white;
+    box-sizing: border-box;
+}
+#deskFront{
+    transform: translate(-50%, -50%) translateZ(55rem);
+    height: 15rem;
+    border-top: 1.4rem solid #824d36;
+    border-left: 1.4rem solid #824d36;
+    border-right: 1.4rem solid #824d36;
+}
+#deskBack{
+    transform: translate(-50%, -50%) translateZ(35rem);
+    height: 15rem;
+    border-right: 1.4rem solid #824d36;
+    border-left: 1.4rem solid #824d36;
+}
+#deskTop{
+    transform: rotateX(-90deg) translateX(-10rem) translateY(-45rem) translateZ(-12.5rem);
+    --angle: 45deg;
+    background: linear-gradient(var(--angle), #C69C6D, #754224);
+}
+
+/* Desk END */
+
+
+/* Notebook */
+
+.notebook{
+    position: absolute;
+    left: 50%;
+    bottom: 25%;
+    box-sizing: border-box;
+}
+#notebookTop{
+    background: url(./assets/images/notebook-no-edges.png);
+    background-size: 100% 100%;
+    transform: translate(-50%, -50%) translateZ(789px) translateY(38.5px) rotateX(90deg) translateX(0.2px);
+    height: 5rem;
+    width: 7.4rem;
+    border-bottom: 1px solid black;
+}
+#notebookFront{
+    transform: translate(-50%, -50%) translateZ(790px) translateY(41px) rotateX(90deg);
+    background-color: #e4dede;
+    height: 5rem;
+    width: 8rem;
+    outline: 1px solid black;
+    box-sizing: border-box;
+}
+#notebookLeft{
+    background-color: #cdcaca;
+    height: 0.4rem;
+    width: 5rem;
+    transform: translate(-50%, -50%) translateZ(788.7px) translateX(-62px) translateY(-34px) rotateY(90deg) rotateX(300deg);
+    outline: 1px solid black;
+    box-sizing: border-box;
+}
+#notebookRight{
+    background-color: #cdcaca;
+    height: 0.4rem;
+    width: 5rem;
+    transform: translate(-50%, -50%) translateZ(788.7px) translateX(62px) translateY(-34px) rotateY(90deg) rotateX(60deg);
+    box-sizing: border-box;
+    outline: 1px solid black;
+}
+
+/* Notebook END */
